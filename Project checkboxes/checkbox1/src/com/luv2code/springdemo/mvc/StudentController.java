@@ -12,10 +12,8 @@ public class StudentController {
 	@RequestMapping("/showForm")
 	public String showForm(Model theModel) {
 		
-		// create a student object
 		Student theStudent = new Student();
 		
-		// add student object to the model
 		theModel.addAttribute("student", theStudent);
 		
 		return "student-form";
@@ -24,7 +22,6 @@ public class StudentController {
 	@RequestMapping("/processForm")
 	public String processForm(@ModelAttribute("student") Student theStudent) {
 		
-		// log the input data
 		System.out.println("theStudent: " + theStudent.getFirstName()
 							+ " " + theStudent.getLastName());
 		
