@@ -16,8 +16,7 @@ public class Student {
 	private String[] operatingSystems;
 	
 	public Student() {
-		
-		// populate country options: used ISO country code
+
 		countryOptions = new LinkedHashMap<>();
 		
 		countryOptions.put("BR", "Brazil");
